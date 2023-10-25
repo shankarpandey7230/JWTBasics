@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>JWT BASICS</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <form class="form contact-form">
+        <h5>login/register</h5>
+        <div class="form-row">
+          <label for="username" class="form-label">username</label>
+          <input type="text" class="form-input username-input" />
+        </div>
+        <div class="form-row">
+          <label for="password" class="form-label">password</label>
+          <input type="password" class="form-input password-input" />
+        </div>
+
+        <div class="text-small form-alert">there was an error</div>
+        <button type="submit" class="btn btn-block">submit</button>
+      </form>
+      <div class="container">
+        <h4>Dashboard</h4>
+        <p class="token">no token present</p>
+        <div class="result"></div>
+        <button class="btn btn-block" id="data">get data</button>
+      </div>
+    </main>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+      integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="./browser-app.js" async defer></script>
+  </body>
+</html>
